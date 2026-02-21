@@ -89,4 +89,57 @@ body {
 }
 .principal__boton--secundario:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.carrusel {
+  padding: 40px;
+}
+.carrusel__titulo {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.carrusel__contenedor {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+.carrusel__tarjeta {
+  width: 200px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.carrusel__tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+  background-color: #0a0d14;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.footer__copyright {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+.footer__enlaces {
+  display: flex;
+  gap: 30px;
+}
+.footer__enlace {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+.footer__enlace:hover {
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
