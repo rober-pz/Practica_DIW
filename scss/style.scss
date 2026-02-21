@@ -61,24 +61,34 @@ body{
     }
 }
 
-.principal{
+.principal {
     min-height: 80vh;
     background-color: $color-fondo;
-    background-image: url(https://media.gq-magazine.co.uk/photos/5f9956da9b357099d70aa238/16:9/w_2560%2Cc_limit/DUNEFILM2810_rev1DU10412rv3_High_Res_JPEG.jpg);
-    background-size: cover;
-    background-position: center;
+    padding: 40px; 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 40px;
-    border-radius: 7%;
-    
-    &__contenido{
+    justify-content: center; 
+    align-items: center;    
+
+    &__hero {
+        width: 100%;
+        max-width: 1200px; 
+        min-height: 70vh;
+        background-image: url(https://media.gq-magazine.co.uk/photos/5f9956da9b357099d70aa238/16:9/w_2560%2Cc_limit/DUNEFILM2810_rev1DU10412rv3_High_Res_JPEG.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 30px; 
+        display: flex;
+        align-items: center;
+        padding: 60px; 
+    }
+
+    &__contenido {
         max-width: 600px;
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
+
     &__titulo{
         font-size: 4rem;
     }

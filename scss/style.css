@@ -55,14 +55,22 @@ body {
 .principal {
   min-height: 80vh;
   background-color: #0f141e;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.principal__hero {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 70vh;
   background-image: url(https://media.gq-magazine.co.uk/photos/5f9956da9b357099d70aa238/16:9/w_2560%2Cc_limit/DUNEFILM2810_rev1DU10412rv3_High_Res_JPEG.jpg);
   background-size: cover;
   background-position: center;
+  border-radius: 30px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 40px;
-  border-radius: 7%;
+  align-items: center;
+  padding: 60px;
 }
 .principal__contenido {
   max-width: 600px;
