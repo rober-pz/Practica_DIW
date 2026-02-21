@@ -11,6 +11,12 @@ $color-acento: #8A2BE2;
 body{
     background-color: $color-fondo;
     color: $color-texto;
+    .header, .principal__hero, .carrusel, .footer {
+    max-width: 1400px; 
+    margin-left: auto;  
+    margin-right: auto; 
+    width: 100%;       
+    }
 }
 
 
@@ -181,6 +187,150 @@ body{
 
         &:hover {
             color: $color-texto; 
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+        gap: 15px; 
+
+        &__nav {
+            gap: 12px;
+            a {
+                font-size: 0.85rem; 
+            }
+        }
+
+        &__buscador {
+            width: 130px; 
+            padding: 8px 12px;
+            font-size: 0.9rem;
+        }
+
+        &__cuenta {
+            gap: 10px;
+        }
+    }
+
+    .principal {
+        padding: 20px; 
+
+        &__hero {
+            min-height: 55vh; 
+            padding: 40px;
+            border-radius: 20px;
+            background-position: center; 
+        }
+
+        &__titulo {
+            font-size: 2.5rem; 
+        }
+
+        &__descripcion {
+            font-size: 1rem;
+            max-width: 100%; 
+        }
+    }
+
+    .carrusel {
+        padding: 20px;
+
+        &__titulo {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        &__tarjeta {
+            width: 160px; 
+            height: 240px;
+        }
+    }
+
+    .footer {
+        padding: 20px;
+        
+        &__enlaces {
+            gap: 15px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        padding: 10px 15px;
+        grid-template-columns: auto 1fr auto; 
+        gap: 10px;
+
+        &__nav {
+            display: none; 
+        }
+
+        &__buscador {
+            display: none; 
+        }
+
+        &-texto {
+            font-size: 1.2rem; 
+        }
+    }
+
+    .principal {
+        padding: 10px; 
+
+        &__hero {
+            min-height: 80vh; 
+            padding: 20px;
+            border-radius: 15px;
+            background-position: center;
+            justify-content: flex-end; 
+        }
+
+        &__titulo {
+            font-size: 1.8rem;
+            line-height: 1.1;
+        }
+
+        &__descripcion {
+            font-size: 0.9rem;
+            overflow: hidden;
+        }
+
+        &__botones {
+            flex-direction: column; 
+            width: 100%;
+            gap: 10px;
+
+            .principal__boton {
+                width: 100%; 
+                padding: 15px;
+            }
+        }
+    }
+
+    .carrusel {
+        padding: 20px 15px;
+
+        &__titulo {
+            font-size: 1.1rem;
+        }
+
+        &__tarjeta {
+            width: 130px; 
+            height: 190px;
+        }
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 30px 20px;
+
+        &__enlaces {
+            flex-direction: column; 
+            gap: 10px;
         }
     }
 }

@@ -8,6 +8,12 @@ body {
   background-color: #0f141e;
   color: #ffffff;
 }
+body .header, body .principal__hero, body .carrusel, body .footer {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 
 .header {
   display: grid;
@@ -166,4 +172,121 @@ body {
 }
 .footer__enlace:hover {
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+    gap: 15px;
+  }
+  .header__nav {
+    gap: 12px;
+  }
+  .header__nav a {
+    font-size: 0.85rem;
+  }
+  .header__buscador {
+    width: 130px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+  .header__cuenta {
+    gap: 10px;
+  }
+  .principal {
+    padding: 20px;
+  }
+  .principal__hero {
+    min-height: 55vh;
+    padding: 40px;
+    border-radius: 20px;
+    background-position: center;
+  }
+  .principal__titulo {
+    font-size: 2.5rem;
+  }
+  .principal__descripcion {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  .carrusel {
+    padding: 20px;
+  }
+  .carrusel__titulo {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  .carrusel__tarjeta {
+    width: 160px;
+    height: 240px;
+  }
+  .footer {
+    padding: 20px;
+  }
+  .footer__enlaces {
+    gap: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    padding: 10px 15px;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__buscador {
+    display: none;
+  }
+  .header-texto {
+    font-size: 1.2rem;
+  }
+  .principal {
+    padding: 10px;
+  }
+  .principal__hero {
+    min-height: 80vh;
+    padding: 20px;
+    border-radius: 15px;
+    background-position: center;
+    justify-content: flex-end;
+  }
+  .principal__titulo {
+    font-size: 1.8rem;
+    line-height: 1.1;
+  }
+  .principal__descripcion {
+    font-size: 0.9rem;
+    overflow: hidden;
+  }
+  .principal__botones {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .principal__botones .principal__boton {
+    width: 100%;
+    padding: 15px;
+  }
+  .carrusel {
+    padding: 20px 15px;
+  }
+  .carrusel__titulo {
+    font-size: 1.1rem;
+  }
+  .carrusel__tarjeta {
+    width: 130px;
+    height: 190px;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  .footer__enlaces {
+    flex-direction: column;
+    gap: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
