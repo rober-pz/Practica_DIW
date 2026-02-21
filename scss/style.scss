@@ -66,21 +66,36 @@ body{
         line-height: 1.5;
         color: #d1d5db;
     }
-    &__boton{
+    // 1. EL CONTENEDOR (Plural)
+    &__botones {
+        display: flex;
+        gap: 15px;
+    }
+    &__boton {
         padding: 12px 28px;
         border-radius: 8px;
         border: none;
         cursor: pointer;
         font-weight: bold;
         font-size: 1rem;
-        &--primario{
+        transition: all 0.3s ease; // Animación suave
+        
+        &--primario {
             background-color: #2563eb;
             color: $color-texto;
+            &:hover {
+                background-color: #1d4ed8;
+            }
         }
-        &--secundario{
+        
+        &--secundario {
             background-color: rgba(255, 255, 255, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.3);
             color: $color-texto;
+            
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
         }
     }
 }
