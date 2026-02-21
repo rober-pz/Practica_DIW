@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f141e;
+  color: #ffffff;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 20px 40px;
+  gap: 40px;
+}
+.header__nav {
+  display: flex;
+  gap: 20px;
+}
+.header__nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.header__cuenta {
+  display: flex;
+  gap: 20px;
+}
+.header__buscador {
+  border: none;
+  outline: none;
+  background-color: #1c252f;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.principal {
+  min-height: 80vh;
+  background-color: #0f141e;
+  background-image: url(https://imagenes.heraldo.es/files/image_1920_1080/uploads/imagenes/2014/10/19/_6a00d8341bfb1653ef01a511ba63de970c_61b86b6f.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+.principal__contenido {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.principal__titulo {
+  font-size: 4rem;
+}
+.principal__descripcion {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #d1d5db;
+}
+.principal__boton {
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.principal__boton--primario {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+.principal__boton--secundario {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}/*# sourceMappingURL=style.css.map */
