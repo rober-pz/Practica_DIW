@@ -36,17 +36,33 @@ body {
   padding: 10px 20px;
   border-radius: 20px;
 }
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__logo-img {
+  height: 40px;
+  width: auto;
+}
+.header__logo-texto {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
 
 .principal {
   min-height: 80vh;
   background-color: #0f141e;
-  background-image: url(https://imagenes.heraldo.es/files/image_1920_1080/uploads/imagenes/2014/10/19/_6a00d8341bfb1653ef01a511ba63de970c_61b86b6f.jpg);
+  background-image: url(https://media.gq-magazine.co.uk/photos/5f9956da9b357099d70aa238/16:9/w_2560%2Cc_limit/DUNEFILM2810_rev1DU10412rv3_High_Res_JPEG.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 40px;
+  border-radius: 7%;
 }
 .principal__contenido {
   max-width: 600px;
