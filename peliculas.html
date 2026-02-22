@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="scss/main.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__logo">
+                <div class="header__logo-img"><img src="imagenes/logo.svg"
+                        alt></div>
+                <span class="header__logo-texto">StreamFlow</span>
+            </div>
+            <div class="header__nav">
+                <a href="index.html">Inicio</a>
+                <a href="#">Series</a>
+                <a href="peliculas.html">Peliculas</a>
+                <a href="#">Mi lista</a>
+            </div>
+            <div class="header__cuenta">
+                <input type="text" class="header__buscador"
+                    placeholder=" 🔍 Titulo,personas,generos">
+                <div class="header__logo-img"><img src="imagenes/usersvg.svg"
+                        alt></div>
+            </div>
+        </header>
+        <main class="contenedor-principal">
+            <section class="principal-pelis">
+                <div class="principal-pelis__hero">
+                    <div class="principal-pelis__contenido">
+                        <h1 class="principal-pelis__titulo">Dune: Part Two</h1>
+                        <p class="principal-pelis__descripcion">Paul Atreides unites with Chani and the Fremen while on a warpath of revenge...</p>
+                        <div class="principal-pelis__botones">
+                            <button class="btn-azul">▶ Watch Trailer</button>
+                            <button class="btn-gris">+ Add to List</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <nav class="barra-filtros">
+                <div class="barra-filtros__grupos">
+                    <button class="filtro-item activo">★ All</button>
+                    <button class="filtro-item">Action</button>
+                    <button class="filtro-item">Comedy</button>
+                    <button class="filtro-item">Drama</button>
+                    <button class="filtro-item">Sci-Fi</button>
+                    <button class="filtro-item">Thriller</button>
+                </div>
+                <div class="barra-filtros__orden">
+                    <span>Sort by: <strong>Popular</strong> ⌵</span>
+                </div>
+            </nav>
+
+            <section class="grid-catalogo">
+                <article class="peli-card">
+                    <img src="imagenes/peli1.jpg" alt="Dark Knight" class="peli-card__img">
+                    <div class="peli-card__txt">
+                        <h3>The Dark Knight</h3>
+                        <p>2008 <span>Action</span></p>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__copyright">© 2024 StreamFlow. All rights
+                reserved.</p>
+            <nav class="footer__enlaces">
+                <a class="footer__enlace" href>Privacy policy</a>
+                <a class="footer__enlace" href>Terms of service</a>
+                <a class="footer__enlace" href>Help center</a>
+
+            </nav>
+
+        </footer>
