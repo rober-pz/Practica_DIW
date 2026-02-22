@@ -1,0 +1,63 @@
+@import '../variables/misvariables';
+.detalle {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 20px;
+
+    &__contenido {
+        display: grid;
+        gap: 20px;
+        padding: 40px;
+    }
+
+    &__titulo {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    &__top {
+        color: $color-principal;
+        padding: 0.6rem;
+        border-radius: 10px;
+        font-weight: bold;
+        background-color: rgba($color-principal, 0.4);
+        width: fit-content;
+    }
+
+    &__descripcion {
+        font-size: 1.2rem;
+        max-width: 100%;
+        word-spacing: 5px;
+    }
+
+    &__info {
+        margin-top:auto;
+        width: 80%;
+
+        &__body {
+            width: 40%;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.1);
+            display: grid;
+            gap: 15px;
+            padding: 40px;
+            padding: 20px;
+            border-radius: 20px;
+            background-position: center;
+
+            &__titulo {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+
+            &__descripcion {
+                font-size: 1rem;
+                max-width: 100%;
+            }
+        }
+
+
+    }
+}

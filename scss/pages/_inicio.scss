@@ -1,91 +1,50 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import '../variables/misvariables';
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-$color-fondo: #0f141e; 
-$color-texto: #ffffff;
-$color-acento: #8A2BE2;
-
-body{
-    background-color: $color-fondo;
-    color: $color-texto;
-    .header, .principal__hero, .carrusel, .footer {
-    max-width: 1400px; 
-    margin-left: auto;  
-    margin-right: auto; 
-    width: 100%;       
-    }
+img {
+    max-width: 100%;
 }
 
 
+body {
+    background-color: $color-fondo;
+    color: $color-texto;
+    font-family: $fuente-principal;
+    font-weight: 500;
 
-.header{
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    padding: 20px 40px;
-    gap: 40px;
-    &__nav{
-        display: flex;
-        gap: 20px;
-        a{
-            text-decoration: none;
-            color: $color-texto;
-        }
-    }
-    &__cuenta{
-        display: flex;
-        gap: 20px;
-    }
-
-    &__buscador {
-        border: none;
-        outline: none;
-        background-color: #1c252f;
-        color: $color-texto;
-        padding: 10px 20px;
-        border-radius: 20px;
-    }
-    &__logo {
-        display: flex;       
-        align-items: center; 
-        gap: 10px;           
-        
-        &-img {
-            height: 40px;   
-            width: auto;
-        }
-
-        &-texto {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: $color-texto;
-            letter-spacing: 1px; 
-        }
+    .header,
+    .principal__hero,
+    .carrusel,
+    .footer {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
 }
 
 .principal {
-    min-height: 80vh;
     background-color: $color-fondo;
-    padding: 40px; 
+    padding: 30px;
     display: flex;
-    justify-content: center; 
-    align-items: center;    
+    justify-content: center;
+    align-items: center;
 
     &__hero {
-        width: 100%;
-        max-width: 1200px; 
-        min-height: 70vh;
+        height: 800px;
         background-image: url(https://media.gq-magazine.co.uk/photos/5f9956da9b357099d70aa238/16:9/w_2560%2Cc_limit/DUNEFILM2810_rev1DU10412rv3_High_Res_JPEG.jpg);
         background-size: cover;
         background-position: center;
-        border-radius: 30px; 
+        border-radius: 30px;
         display: flex;
         align-items: center;
-        padding: 60px; 
+        padding: 100px;
+        -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
     }
 
     &__contenido {
@@ -95,18 +54,21 @@ body{
         gap: 20px;
     }
 
-    &__titulo{
+    &__titulo {
         font-size: 4rem;
     }
-    &__descripcion{
+
+    &__descripcion {
         font-size: 1.1rem;
         line-height: 1.5;
         color: #d1d5db;
     }
+
     &__botones {
         display: flex;
         gap: 15px;
     }
+
     &__boton {
         padding: 12px 28px;
         border-radius: 8px;
@@ -114,21 +76,22 @@ body{
         cursor: pointer;
         font-weight: bold;
         font-size: 1rem;
-        transition: all 0.3s ease; 
-        
+        transition: all 0.3s ease;
+
         &--primario {
             background-color: #2563eb;
             color: $color-texto;
+
             &:hover {
                 background-color: #1d4ed8;
             }
         }
-        
+
         &--secundario {
             background-color: rgba(255, 255, 255, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.3);
             color: $color-texto;
-            
+
             &:hover {
                 background-color: rgba(255, 255, 255, 0.2);
             }
@@ -136,75 +99,21 @@ body{
     }
 }
 
-.carrusel{
-    padding: 40px;
-    &__titulo {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-        font-weight: bold;
-    }
-    &__contenedor {
-        display: flex;
-        gap: 20px;
-        overflow-x: auto; 
-        padding-bottom: 20px; 
-    }
-    &__tarjeta {
-        width: 200px;
-        height: 300px;
-        object-fit: cover; 
-        border-radius: 10px; 
-        cursor: pointer;
-        transition: transform 0.3s ease; 
-
-        &:hover {
-            transform: scale(1.05); 
-        }
-    }
-
-}
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 40px;
-    background-color: #0a0d14; 
-    border-top: 1px solid rgba(255, 255, 255, 0.05); 
-    &__copyright {
-        color: #9ca3af; 
-        font-size: 0.9rem;
-    }
-    &__enlaces {
-        display: flex;
-        gap: 30px; 
-    }
-    &__enlace {
-        color: #9ca3af;
-        text-decoration: none;
-        font-size: 0.9rem;
-        transition: color 0.3s ease;
-
-        &:hover {
-            color: $color-texto; 
-        }
-    }
-}
-
 @media (max-width: 768px) {
     .header {
         padding: 15px 20px;
-        gap: 15px; 
+        gap: 15px;
 
         &__nav {
             gap: 12px;
+
             a {
-                font-size: 0.85rem; 
+                font-size: 0.85rem;
             }
         }
 
         &__buscador {
-            width: 130px; 
+            width: 130px;
             padding: 8px 12px;
             font-size: 0.9rem;
         }
@@ -215,22 +124,22 @@ body{
     }
 
     .principal {
-        padding: 20px; 
+        padding: 20px;
 
         &__hero {
-            min-height: 55vh; 
+            min-height: 55vh;
             padding: 40px;
             border-radius: 20px;
-            background-position: center; 
+            background-position: center;
         }
 
         &__titulo {
-            font-size: 2.5rem; 
+            font-size: 2.5rem;
         }
 
         &__descripcion {
             font-size: 1rem;
-            max-width: 100%; 
+            max-width: 100%;
         }
     }
 
@@ -243,14 +152,14 @@ body{
         }
 
         &__tarjeta {
-            width: 160px; 
+            width: 160px;
             height: 240px;
         }
     }
 
     .footer {
         padding: 20px;
-        
+
         &__enlaces {
             gap: 15px;
         }
@@ -260,31 +169,31 @@ body{
 @media (max-width: 576px) {
     .header {
         padding: 10px 15px;
-        grid-template-columns: auto 1fr auto; 
+        grid-template-columns: auto 1fr auto;
         gap: 10px;
 
         &__nav {
-            display: none; 
+            display: none;
         }
 
         &__buscador {
-            display: none; 
+            display: none;
         }
 
         &-texto {
-            font-size: 1.2rem; 
+            font-size: 1.2rem;
         }
     }
 
     .principal {
-        padding: 10px; 
+        padding: 10px;
 
         &__hero {
-            min-height: 80vh; 
+            min-height: 80vh;
             padding: 20px;
             border-radius: 15px;
             background-position: center;
-            justify-content: flex-end; 
+            justify-content: flex-end;
         }
 
         &__titulo {
@@ -298,12 +207,12 @@ body{
         }
 
         &__botones {
-            flex-direction: column; 
+            flex-direction: column;
             width: 100%;
             gap: 10px;
 
             .principal__boton {
-                width: 100%; 
+                width: 100%;
                 padding: 15px;
             }
         }
@@ -317,7 +226,7 @@ body{
         }
 
         &__tarjeta {
-            width: 130px; 
+            width: 130px;
             height: 190px;
         }
     }
@@ -329,7 +238,7 @@ body{
         padding: 30px 20px;
 
         &__enlaces {
-            flex-direction: column; 
+            flex-direction: column;
             gap: 10px;
         }
     }

@@ -1,0 +1,38 @@
+.botones {
+    display: flex;
+    gap: 15px;
+    
+    &--primario {
+        background-color: #2563eb;
+        color: $color-texto;
+        padding: 12px 28px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+
+
+        &:hover {
+            background-color: #1d4ed8;
+        }
+    }
+
+    &--secundario {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: $color-texto;
+        padding: 12px 28px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+}
