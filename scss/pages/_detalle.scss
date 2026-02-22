@@ -5,7 +5,19 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     padding: 20px;
-
+    background: 
+        linear-gradient(
+            to bottom, 
+            rgba(0, 0, 0, 0.6), // Negro arriba (60% opacidad)
+            rgba(0, 0, 0, 0.9)  // Negro casi puro abajo (se apaga la foto)
+        ),
+        url('https://media.gq-magazine.co.uk/photos/5f9956da9b357099d70aa238/16:9/w_2560%2Cc_limit/DUNEFILM2810_rev1DU10412rv3_High_Res_JPEG.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 80% 10%;
+        -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+        mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+        height: fit-content;
     &__contenido {
         display: grid;
         gap: 20px;
@@ -22,7 +34,7 @@
         padding: 0.6rem;
         border-radius: 10px;
         font-weight: bold;
-        background-color: rgba($color-principal, 0.4);
+        background-color: rgba($color-principal, 0.1);
         width: fit-content;
     }
 
@@ -32,24 +44,40 @@
         word-spacing: 5px;
     }
 
+    &__generos {
+        display: flex;
+        gap: 10px;
+        font-size: 0.9rem;
+        color: rgba($color-texto, 0.7);
+        align-items: center;
+
+        &__item {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    }
+
     &__info {
         margin-top:auto;
         width: 80%;
+        margin-bottom: 30px;
 
         &__body {
-            width: 40%;
+            width:fit-content ;
             margin: auto;
-            background-color: rgba(0, 0, 0, 0.1);
+            background-color: rgba(0, 0, 0, 0.4);
             display: grid;
             gap: 15px;
             padding: 40px;
-            padding: 20px;
             border-radius: 20px;
-            background-position: center;
+            white-space: nowrap;
 
             &__titulo {
                 font-size: 1rem;
                 font-weight: bold;
+                color: $color-principal;
             }
 
             &__descripcion {
@@ -57,6 +85,8 @@
                 max-width: 100%;
             }
         }
+
+
 
 
     }

@@ -6,6 +6,14 @@
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   padding: 20px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("https://media.gq-magazine.co.uk/photos/5f9956da9b357099d70aa238/16:9/w_2560%2Cc_limit/DUNEFILM2810_rev1DU10412rv3_High_Res_JPEG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80% 10%;
+  -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .detalle__contenido {
   display: grid;
@@ -21,7 +29,7 @@
   padding: 0.6rem;
   border-radius: 10px;
   font-weight: bold;
-  background-color: rgba(18, 91, 236, 0.4);
+  background-color: rgba(18, 91, 236, 0.1);
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -30,24 +38,39 @@
   max-width: 100%;
   word-spacing: 5px;
 }
+.detalle__generos {
+  display: flex;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  align-items: center;
+}
+.detalle__generos__item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
 .detalle__info {
   margin-top: auto;
   width: 80%;
+  margin-bottom: 30px;
 }
 .detalle__info__body {
-  width: 40%;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.4);
   display: grid;
   gap: 15px;
   padding: 40px;
-  padding: 20px;
   border-radius: 20px;
-  background-position: center;
+  white-space: nowrap;
 }
 .detalle__info__body__titulo {
   font-size: 1rem;
   font-weight: bold;
+  color: #125bec;
 }
 .detalle__info__body__descripcion {
   font-size: 1rem;
@@ -323,7 +346,8 @@ body .footer {
   font-weight: bold;
 }
 .carrusel__contenedor {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
   gap: 20px;
   overflow-x: auto;
   padding-bottom: 20px;
@@ -333,12 +357,20 @@ body .footer {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 10px;
+  overflow: hidden;
+  border-radius: 15px;
   cursor: pointer;
-  transition: transform 0.3s ease;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.carrusel__tarjeta:hover {
+.carrusel__tarjeta img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.5s ease;
+  display: block;
+}
+.carrusel__tarjeta:hover img {
   transform: scale(1.05);
 }
 
