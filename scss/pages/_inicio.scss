@@ -35,10 +35,11 @@ body {
     align-items: center;
 
     &__hero {
-        height: 800px;
-        background-image: url(https://media.gq-magazine.co.uk/photos/5f9956da9b357099d70aa238/16:9/w_2560%2Cc_limit/DUNEFILM2810_rev1DU10412rv3_High_Res_JPEG.jpg);
+        height: 600px;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent), 
+                    url(https://media.gq-magazine.co.uk/photos/5f9956da9b357099d70aa238/16:9/w_2560%2Cc_limit/DUNEFILM2810_rev1DU10412rv3_High_Res_JPEG.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: 80% 10%;
         border-radius: 30px;
         display: flex;
         align-items: center;
