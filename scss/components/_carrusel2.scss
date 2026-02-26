@@ -1,0 +1,37 @@
+.catalogo-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 30px;
+    padding: 40px;
+    white-space: nowrap;
+}
+
+.peli-tarjeta {
+    transition: transform 0.3s ease;
+
+    &:hover { transform: translateY(-10px); }
+
+    &__contenedor-img {
+        aspect-ratio: 2 / 3;
+        overflow: hidden;
+        border-radius: 15px;
+        background-color: #1a1a1a;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__cuerpo { padding: 15px 0; }
+    &__titulo { font-size: 1rem; margin-bottom: 5px; }
+    
+    &__meta {
+        display: grid; 
+        grid-template-columns: auto auto; 
+        justify-content: space-between; 
+        font-size: 0.85rem;
+        color: #9ca3af;
+    }
+}

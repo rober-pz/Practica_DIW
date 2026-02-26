@@ -1,6 +1,10 @@
 .botones {
     display: flex;
     gap: 15px;
+    a{
+        text-decoration: none;
+        color: white;
+    }
     
     &--primario {
         background-color: #2563eb;

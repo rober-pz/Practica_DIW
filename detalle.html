@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,20 +17,19 @@
                 <div class="header__nav">
                     <a href="index.html">Inicio</a>
                     <a href="#">Series</a>
-                    <a href="#">Peliculas</a>
-                    <a href="#">Mi lista</a>
+                    <a href="#">Películas</a>
                 </div>
                 <div class="header__cuenta">
                     <input type="text" class="header__buscador"
-                        placeholder=" 🔍 Titulo,personas,generos">
+                        placeholder=" 🔍 Título, personas, géneros">
                     <div class="header__logo-img"><img
                             src="imagenes/usersvg.svg" alt></div>
                 </div>
             </header>
             <section class="detalle">
                 <div class="detalle__contenido">
-                    <span class="detalle__top">#1 IN FILMS TODAY</span>
-                    <h1 class="detalle__titulo">Dune:part two</h1>
+                    <span class="detalle__top">#1 EN PELÍCULAS HOY</span>
+                    <h1 class="detalle__titulo">Dune: parte dos</h1>
                     <span class="detalle__fechaduracion">2024 --- 2h 35m</span>
                     <p class="detalle__descripcion">El argumento sigue a Paul
                         Atreides, quien, tras ser considerado muerto por los
@@ -42,19 +41,23 @@
                         una guerra santa que solo él puede prever.</p>
                     <div class="botones">
                         <button
-                            class="botones--primario"><i
-                                class="bi bi-play"></i>Play</button>
+                            class="botones--primario play"><i
+                                class="bi bi-play"></i><a
+                                href="visionado.html">Reproducir</a></button>
                         <button
-                            class="botones--secundario">+ My List</button>
+                            class="botones--secundario mylist">+ Mi
+                            Lista</button>
                         <button
-                            class="botones--secundario"><i
+                            class="botones--secundario like"><i
                                 class="bi bi-hand-thumbs-up"></i></button>
                     </div>
                     <div class="detalle__generos">
-                        GENEROS:
+                        GÉNEROS:
                         <span class="detalle__generos__item">Acción</span>
-                        <span class="detalle__generos__item">Adventure</span>
-                        <span class="detalle__generos__item">Science-fiction</span>
+                        <span class="detalle__generos__item">Aventura</span>
+                        <span
+                            class="detalle__generos__item">Ciencia
+                            ficción</span>
                     </div>
                 </div>
                 <div class="detalle__info">
@@ -67,45 +70,119 @@
                     </div>
                 </div>
             </section>
-            <section class="carrusel">
-                <h2 class="carrusel__titulo">More like this</h2>
-                <div class="carrusel__contenedor">
-                    <div class="carrusel__tarjeta">
-                        <img
-                            src="https://media.themoviedb.org/t/p/w440_and_h660_face/3sjc9qXXmQoUWKQ3qIjS1nZaUJy.jpg">
-
+            <section class="informacion">
+                <article class="informacion__sinopsis">
+                    <h2>Historia</h2>
+                    <p>El futuro de la Tierra se ha visto plagado de desastres,
+                        hambrunas
+                        y sequías. Solo hay una forma de asegurar la
+                        supervivencia de la
+                        humanidad: los viajes interestelares. Un agujero de
+                        gusano recién
+                        descubierto en los confines de nuestro sistema solar
+                        permite a un
+                        equipo de astronautas ir a donde ningún hombre ha ido
+                        jamás, un planeta que puede tener el entorno adecuado
+                        para
+                        sostener la vida humana.</p>
+                </article>
+                <article class="informacion__trailer">
+                    <div class="informacion__icono"><img
+                            src="imagenes/play2.svg" alt></div>
+                    <div class="informacion__texto">
+                        <h4>Ver Tráiler</h4>
+                        <span>Tráiler Oficial 3 (2m 14s)</span>
                     </div>
-
-                    <div class="carrusel__tarjeta">
-                        <img
-                            src="https://media.themoviedb.org/t/p/w440_and_h660_face/hGH8Ji7pG2ytHxo7ABqHM3TpzFA.jpg">
+                    <div class="informacion__play">
+                        <img src="imagenes/play.svg" alt>
                     </div>
-                    <div class="carrusel__tarjeta">
+                </article>
+            </section>
+            <h2 class="title">
+                Más como esto
+            </h2>
+            <section class="catalogo-grid">
+                <article class="peli-tarjeta">
+                    <div class="peli-tarjeta__contenedor-img">
                         <img
-                            src="https://media.themoviedb.org/t/p/w440_and_h660_face/wOXc8stx1CLvM6GC0ABKfWOkbYw.jpg">
+                            src="https://media.themoviedb.org/t/p/w440_and_h660_face/afGUJcMBJloAUp9uC27MQiqkD7X.jpg"
+                            alt="#" class="peli-tarjeta__img">
                     </div>
-                    <div class="carrusel__tarjeta">
+                    <div class="peli-tarjeta__cuerpo">
+                        <h3 class="peli-tarjeta__titulo">Cumbres
+                            borrascosas</h3>
+                        <div class="peli-tarjeta__meta">
+                            <span class="peli-tarjeta__año">2026</span>
+                            <span class="peli-tarjeta__genero">Romance</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="peli-tarjeta">
+                    <div class="peli-tarjeta__contenedor-img">
                         <img
-                            src="https://media.themoviedb.org/t/p/w440_and_h660_face/1GZaoYe0mQy211DgDSAxAXr30ul.jpg">
+                            src="https://media.themoviedb.org/t/p/w440_and_h660_face/hflipaW7mtfKZM9WFEyzUdFsgSk.jpg"
+                            alt="#" class="peli-tarjeta__img">
                     </div>
-                    <div class="carrusel__tarjeta">
+                    <div class="peli-tarjeta__cuerpo">
+                        <h3 class="peli-tarjeta__titulo">Scream 7</h3>
+                        <div class="peli-tarjeta__meta">
+                            <span class="peli-tarjeta__año">2026</span>
+                            <span class="peli-tarjeta__genero">Terror</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="peli-tarjeta">
+                    <div class="peli-tarjeta__contenedor-img">
                         <img
-                            src="https://media.themoviedb.org/t/p/w440_and_h660_face/gqzIKAeBKkiwj5qz2oZCOuZKHPA.jpg">
+                            src="https://media.themoviedb.org/t/p/w440_and_h660_face/4fRdfQPjHiuDSkzaxFAV44k7Iem.jpg"
+                            alt="#" class="peli-tarjeta__img">
                     </div>
-                    <div class="carrusel__tarjeta">
+                    <div class="peli-tarjeta__cuerpo">
+                        <h3 class="peli-tarjeta__titulo">Zootrópolis 2</h3>
+                        <div class="peli-tarjeta__meta">
+                            <span class="peli-tarjeta__año">2025</span>
+                            <span class="peli-tarjeta__genero">Animación</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="peli-tarjeta">
+                    <div class="peli-tarjeta__contenedor-img">
                         <img
-                            src="https://media.themoviedb.org/t/p/w440_and_h660_face/2DTPapravB7kVBWjm6RsqEWyNqn.jpg">
+                            src="https://media.themoviedb.org/t/p/w440_and_h660_face/hVo0g5M8z1kuhzxQ51eCbF81wUh.jpg"
+                            alt="#" class="peli-tarjeta__img">
                     </div>
-                    <div class="carrusel__tarjeta">
+                    <div class="peli-tarjeta__cuerpo">
+                        <h3 class="peli-tarjeta__titulo">Hamnet</h3>
+                        <div class="peli-tarjeta__meta">
+                            <span class="peli-tarjeta__año">2026</span>
+                            <span class="peli-tarjeta__genero">Drama</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="peli-tarjeta">
+                    <div class="peli-tarjeta__contenedor-img">
                         <img
-                            src="https://media.themoviedb.org/t/p/w440_and_h660_face/9zBNg8koM3fjUTPT7QeJHuGG2r9.jpg">
+                            src="https://media.themoviedb.org/t/p/w440_and_h660_face/mijSU0Rws3tBBbhdE5udxPSaZvF.jpg"
+                            alt="#" class="peli-tarjeta__img">
                     </div>
-                    <div class="carrusel__tarjeta">
-                        <img
-                            src="https://media.themoviedb.org/t/p/w440_and_h660_face/ifo31fMWLmyOVpdak9K0kY4jldQ.jpg">
+                    <div class="peli-tarjeta__cuerpo">
+                        <h3 class="peli-tarjeta__titulo">Marty Supreme</h3>
+                        <div class="peli-tarjeta__meta">
+                            <span class="peli-tarjeta__año">2025</span>
+                            <span class="peli-tarjeta__genero">Acción</span>
+                        </div>
                     </div>
-                </div>
-
-            </div>
-        </body>
-    </html>
+                </article>
+            </section>
+            <footer class="footer">
+                <p class="footer__copyright">© 2024 StreamFlow. Todos los
+                    derechos reservados.</p>
+                <nav class="footer__enlaces">
+                    <a class="footer__enlace" href>Política de privacidad</a>
+                    <a class="footer__enlace" href>Términos de servicio</a>
+                    <a class="footer__enlace" href>Centro de ayuda</a>
+                </nav>
+            </footer>
+        </div>
+    </body>
+</html>

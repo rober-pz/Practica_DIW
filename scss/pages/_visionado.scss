@@ -1,0 +1,154 @@
+// ConfiguraciÃ³n corporativa
+$azul-corporativo: #125bec;
+$blanco-puro: #ffffff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden; 
+}
+
+.contenedor-reproductor {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .video-principal {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+}
+
+.capa-interfaz {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    
+    display: grid;
+    grid-template-rows: 80px 1fr auto; 
+    grid-template-areas: 
+        "cabecera"
+        "central"
+        "controles";
+}
+
+.cabecera-video {
+    grid-area: cabecera;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: $blanco-puro;
+
+    .boton-volver {
+        color: $blanco-puro;
+        text-decoration: none;
+        font-size: 2rem;
+        &:hover { color: $azul-corporativo; }
+    }
+
+    .titulo-video {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+}
+
+.zona-central {
+    grid-area: central;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .boton-play-grande {
+        background: rgba(0, 0, 0, 0.4);
+        border: 3px solid $blanco-puro;
+        color: $blanco-puro;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        font-size: 3rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        padding-left: 10px;
+
+        &:hover {
+            transform: scale(1.1);
+            background: $azul-corporativo;
+            border-color: $azul-corporativo;
+        }
+    }
+}
+
+.controles-video {
+    grid-area: controles;
+    padding: 0 40px 30px 40px;
+    display: flex;
+    flex-direction: column;
+
+    .contenedor-progreso {
+        margin-bottom: 20px;
+        
+        .barra-total {
+            height: 6px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 3px;
+            cursor: pointer;
+            
+            .progreso-actual {
+                width: 60%; 
+                height: 100%;
+                background: $azul-corporativo; // Tu azul
+                border-radius: 3px;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: -6px;
+                    top: -4px;
+                    width: 14px;
+                    height: 14px;
+                    background: $azul-corporativo;
+                    border-radius: 50%;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                }
+            }
+        }
+    }
+
+    .barra-inferior {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $blanco-puro;
+
+        .controles-izquierda, .controles-derecha {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .btn-control {
+            background: none;
+            border: none;
+            color: $blanco-puro;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: color 0.2s;
+
+            &:hover { color: $azul-corporativo; }
+        }
+    }
+}
